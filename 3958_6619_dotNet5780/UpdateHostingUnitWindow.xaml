@@ -1,0 +1,96 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.UpdateHostingUnitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Update Hosting Unit Window" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="679*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.istriaexperience.com/wp-content/uploads/freshizer/44d9e3b88bf8c38d99ee9bf44dd131c2_Kanegra_beach_5-1500-1000-c-100.jpg"/>
+        </Grid.Background>
+        <Button x:Name="updatehostingunitButton" Foreground="Black" Content="Update Hosting Unit" HorizontalAlignment="Left" Height="47" Margin="219,349,0,0" VerticalAlignment="Top" Width="275"  Opacity="0.5" FontWeight="ExtraBold" FontFamily="Century Schoolbook" Click="updatehostingunitButton_Click" Grid.Column="1" />
+        <Label Content="Pool" Foreground="LightCoral" HorizontalAlignment="Left" Height="34" Margin="19,11,0,0" VerticalAlignment="Top" Width="61"/>
+        <ComboBox x:Name="JacuzziComboxBox" HorizontalAlignment="Left" ItemsSource="{Binding BE.Jacuzzi}"  Height="25" Margin="71,114,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.771,3.385" Grid.ColumnSpan="2"/>
+        <Label Content="Jacuzzi" HorizontalAlignment="Left" Foreground="LightCoral" Height="23" Margin="15,115,0,0" VerticalAlignment="Top" Width="56"/>
+
+
+        <Label Content="Garden" HorizontalAlignment="Left" Foreground="LightCoral" Margin="116.333,12,0,0" VerticalAlignment="Top" Width="68" Height="24" Grid.Column="1"/>
+        <Label Content="Children's attractions" HorizontalAlignment="Left" Foreground="LightCoral" Margin="116.333,64,0,0" VerticalAlignment="Top" Width="118" Height="24" Grid.Column="1"/>
+        <Label Content="Public Transportation" HorizontalAlignment="Left" Foreground="LightCoral" Margin="116.333,116,0,0" VerticalAlignment="Top" Width="135" Height="24" Grid.Column="1"/>
+        <Label Content="Wifi" HorizontalAlignment="Left" Margin="15,222,0,0" Foreground="LightCoral" VerticalAlignment="Top" Width="51" Height="25"/>
+        <Label Content="Tv" HorizontalAlignment="Left" Margin="19,277,0,0"  Foreground="LightCoral" VerticalAlignment="Top" Width="47" Height="24"/>
+        <ComboBox x:Name="WifiComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.Wifi}"   Margin="66,222,0,0" VerticalAlignment="Top" Width="106" Height="25" Grid.ColumnSpan="2" />
+        <ComboBox x:Name="TvComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.Tv}"  Margin="66,277,0,0" VerticalAlignment="Top" Width="106" Height="24" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="GardenComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.Garden}"  Margin="239.333,11,0,0" VerticalAlignment="Top" Width="97" Height="25" Grid.Column="1"/>
+        <ComboBox x:Name="ChildrensAttractionComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.ChildrensAttraction}"  Margin="239.333,64,0,0" VerticalAlignment="Top" Width="97" Height="24" Grid.Column="1"/>
+        <ComboBox x:Name="PublicTransportationComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.PublicTransportation}"  Margin="239.333,118,0,0" VerticalAlignment="Top" Width="97" Height="21" Grid.Column="1"/>
+        <Label Content="Room Service" Foreground="LightCoral" HorizontalAlignment="Left" Margin="116.333,222,0,0" VerticalAlignment="Top" Width="101" Height="25" Grid.Column="1"/>
+        <ComboBox x:Name="RoomServiceComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.roomService}"  Margin="239.333,222,0,0" VerticalAlignment="Top" Width="97" Height="25" Grid.Column="1"/>
+        <ComboBox x:Name="PoolComboxBox" HorizontalAlignment="Left" ItemsSource="{Binding BE.Pool}" Height="25" Margin="71,10,0,0" VerticalAlignment="Top" Width="101" Grid.ColumnSpan="2"/>
+        <Button x:Name="gobackButton" Foreground="Black"  Content="Exit" HorizontalAlignment="Left" Margin="19,352,0,0" VerticalAlignment="Top" Width="112" Opacity="0.5" FontWeight="ExtraBold"  Height="41" Click="gobackButton_Click" Grid.ColumnSpan="2"/>
+        <Label Content="Smoking" HorizontalAlignment="Left" Foreground="LightCoral" Margin="116.333,170,0,0" VerticalAlignment="Top" Width="101" Height="34" Grid.Column="1"/>
+        <ComboBox x:Name="SmokingComboxBox" HorizontalAlignment="Left"   ItemsSource="{Binding Path= BE.Smoking}" Margin="239.333,170,0,0" VerticalAlignment="Top" Width="97" Height="21" Grid.Column="1"/>
+
+
+        <Label Content="Hosting Unit Name" Foreground="LightCoral" HorizontalAlignment="Left" Margin="335.333,55,0,0" VerticalAlignment="Top" Width="116" Height="34" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.117"/>
+                    <RotateTransform Angle="0.602"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+
+
+
+        </Label>
+        <Label Content="Snack Bar" Foreground="LightCoral" HorizontalAlignment="Left" Margin="116.333,278,0,0" VerticalAlignment="Top" Width="90" Height="23" Grid.Column="1"/>
+        <ComboBox x:Name="SnackBarComboxBox" HorizontalAlignment="Left"  ItemsSource="{Binding BE.snackbar}"  Margin="239.333,276,0,0" VerticalAlignment="Top" Width="97" Height="25" Grid.Column="1"/>
+        <TextBox x:Name="HostingUnitNameTextBox" HorizontalAlignment="Left" Height="23" Margin="460,60,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="206" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.798"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.566"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Grid x:Name="grid10" HorizontalAlignment="Left" Margin="27,60,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="32" Width="107">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Size:" Foreground="LightCoral" Grid.Column="0" HorizontalAlignment="Left" Margin="-4,2,0,4" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="sizeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,4,-9,4" Grid.Row="0" Text="{Binding Size, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="77" RenderTransformOrigin="0.616,0.229"/>
+        </Grid>
+        <Grid x:Name="grid3" HorizontalAlignment="Left" Margin="19,158,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="32" Width="109">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Floors:" Grid.Column="0" Foreground="LightCoral" HorizontalAlignment="Left" Margin="-4,0,0,6" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="floorsTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,2,-42,6" Grid.Row="0" Text="{Binding Floors, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"  Width="100"/>
+        </Grid>
+        <ComboBox  Name="HostingUnitKeyComboBox" SelectionChanged="HostingUnitKeyComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="461,23,0,0" VerticalAlignment="Top" Width="206" Grid.Column="1" Height="23" />
+        <Label Content="Hosting unit key" Foreground="LightCoral"  HorizontalAlignment="Left" Margin="341.333,19,0,0" VerticalAlignment="Top" Grid.Column="1" Height="27" Width="97"/>
+        <ComboBox x:Name="collectionclearanceComboBox" HorizontalAlignment="Left" Margin="461,116,0,0" VerticalAlignment="Top" Width="123" Grid.Column="1" Height="22"/>
+        <Label Content="Collection Clearance" Foreground="LightCoral" HorizontalAlignment="Left" Margin="341.333,112,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="118"/>
+
+    </Grid>
+</Window>

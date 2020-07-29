@@ -1,0 +1,44 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Vacation Time"  Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+
+    <Grid >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="VACATION TIME" Foreground="LightCoral"   HorizontalAlignment="Left" Height="52" Margin="27,316,0,0" VerticalAlignment="Top" Width="311" FontFamily="Viner Hand ITC" FontSize="36" FontWeight="Bold"/>
+        <Button Grid.ColumnSpan="2"   Foreground="LightCoral"  Content="Guest Request" HorizontalAlignment="Left"  Margin="172,44,0,0" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.5,0.5" Height="63" FontFamily="Century Schoolbook" FontWeight="ExtraBold" Opacity="0.5" Click="GuestRequestButtonClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.356"/>
+                    <RotateTransform Angle="-0.257"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+
+            </Button.RenderTransform>
+        </Button>
+        <Button Grid.ColumnSpan="2"    Content="Hosting Units" Foreground="LightCoral" HorizontalAlignment="Left" Margin="361,41,0,0" VerticalAlignment="Top" Width="135" Height="68" FontFamily="Century Schoolbook" FontWeight="ExtraBold" Opacity="0.5" Click="HostingUnitButtonClick"/>
+        <Button Grid.ColumnSpan="2"    Content="Admin" Foreground="LightCoral" HorizontalAlignment="Left" Height="68" Margin="539,41,0,0" VerticalAlignment="Top" Width="128" Click="WebSiteAdminButtonClick" Opacity="0.5" FontFamily="Century Schoolbook" FontWeight="ExtraBold"/>
+        <Button x:Name="exitButton" Grid.ColumnSpan="2" Content="Exit" HorizontalAlignment="Left" Margin="631,319,0,0" VerticalAlignment="Top" Width="119" Height="68" Click="exitButton_Click" Opacity="0.5" Foreground="LightCoral" FontWeight="ExtraBold" FontFamily="Century Schoolbook" FontSize="14">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FFF7F2F2" Opacity="0.5"/>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="date_label" Content="{Binding Path=Date}"  Foreground="LightCoral" FontWeight="ExtraBold"  HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top" Width="296" Height="25"/>
+        <Button x:Name="udpatedateButton" Opacity="0.5" Foreground="LightCoral" FontWeight="ExtraBold" Content="Update Date And Time" HorizontalAlignment="Left" Margin="48.333,366,0,0" VerticalAlignment="Top" Width="152" Click="udpatedateButton_Click" Grid.Column="1"/>
+        <Label Content="© Dina Pinchuck and Eve Bibas , January 2020" FontWeight="Bold" Foreground="LightCoral" HorizontalAlignment="Left" Margin="27,373,0,0" VerticalAlignment="Top" Width="271"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="http://www.obzor-beach-resort.com/photos/obzor-beach-resort_345_01_640.jpg " Stretch="UniformToFill"/>
+        </Grid.Background>
+    </Grid>
+
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.OrdersListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Orders List Window" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+    <Grid>
+        <Button Name="UpdateOrderButton"   Foreground="LightCoral" Content="Update Order" HorizontalAlignment="Left" Height="72" Margin="297,337,0,0" VerticalAlignment="Top" Width="185" Click="UpdateOrderButton_Click" Opacity="0.5" FontSize="18" />
+        <Button Content="Exit" Name="ExitButton" Opacity="0.5" Foreground="LightCoral" HorizontalAlignment="Left" Margin="25,358,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="Button_Click"/>
+        <ListBox HorizontalAlignment="Left" Name="orderlistListBox" Opacity="0.5" Height="267" Margin="25,10,0,0" VerticalAlignment="Top" Width="741">
+           
+        </ListBox>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i-det.unimedias.fr/sites/art-de-vivre/files/styles/large/public/bretagne_plage_trebeurden_mg_4217.jpg" />
+        </Grid.Background>
+    </Grid>
+</Window>

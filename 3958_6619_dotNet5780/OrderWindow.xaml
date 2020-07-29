@@ -1,0 +1,22 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Order Window" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg"  Height="475.333" Width="800">
+    <Grid Margin="0,0,0,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AddOrderButton" Foreground="LightCoral" Content="Add Order" HorizontalAlignment="Left" Height="97" Margin="389,189,0,0" VerticalAlignment="Top" Width="308" Click="AddOrderButton_Click" Opacity="0.5" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Button x:Name="updateOrderButton" Foreground="LightCoral" Content="Update Order" HorizontalAlignment="Left" Height="104" Margin="389,322,0,0" VerticalAlignment="Top" Width="308" Click="updateOrderButton_Click_1" Opacity="0.485" FontWeight="Bold" FontSize="24" Grid.Column="1" />
+        <Button x:Name="OrderListButton" Foreground="LightCoral" Content="Order List" HorizontalAlignment="Left" Margin="389,0,0,295" Width="308" Click="OrderListButton_Click" Opacity="0.5" Height="107" VerticalAlignment="Bottom" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Button x:Name="ExitButton" Foreground="LightCoral" Content="Exit" HorizontalAlignment="Left" Margin="1,389,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Opacity="0.5" FontWeight="Bold" FontSize="24" Grid.Column="1" Height="36"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://r-cf.bstatic.com/images/hotel/max1024x768/120/120850448.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>

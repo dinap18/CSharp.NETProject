@@ -1,0 +1,56 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.GuestRequestQueriesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Guest Request Queries Window" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://media-cdn.tripadvisor.com/media/photo-s/18/28/86/d7/varadero-beach.jpg"/>
+        </Grid.Background>
+        <Label Content="Group Requests" Foreground="LightCoral" FontWeight="ExtraBold" FontSize="18" HorizontalAlignment="Left" Margin="43,43,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="groupbyComboBox" Opacity="0.5" HorizontalAlignment="Left" Margin="497,43,0,0" VerticalAlignment="Top" Width="234" Height="34" SelectionChanged="groupbyComboBox_SelectionChanged">
+            <ComboBoxItem>Area</ComboBoxItem>
+            <ComboBoxItem>Number Of Vacations</ComboBoxItem>
+            <ComboBoxItem>All</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="groupingDataGrid" Opacity="0.5" IsReadOnly="True"  FontWeight="ExtraBold" HorizontalAlignment="Left" Height="292" Margin="43,93,0,0" VerticalAlignment="Top" Width="688">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn x:Name="guestrequestkeycolumn" Header="Request Key  " Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate>
+                            <TextBlock Text="{Binding GuestRequestKey}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTextColumn x:Name="privatenamecolumn" Binding="{Binding PrivateName}" Header="First Name         " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="Familynamecolumn" Binding="{Binding FamilyName}" Header="Last Name          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="emailcolumn" Binding="{Binding MailAddress}" Header="Email Address         " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="statuscolumn" Binding="{Binding Status}" Header="Status          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="registrationdatecolumn" Binding="{Binding RegistrationDate}" Header="Registration Date         " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="entrydatecolumn" Binding="{Binding EntryDate}" Header="Entry Date        " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="releasedatecolumn" Binding="{Binding ReleaseDate}" Header="Release Date           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="typecolumn" Binding="{Binding type}" Header="Type           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="Adultscolumn" Binding="{Binding Adults}" Header="Adults          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="childrencolumn" Binding="{Binding Children}" Header="Children           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="poolcolumn" Binding="{Binding pool}" Header="Pool          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="jacuzzicolumn" Binding="{Binding jacuzzi}" Header="Jacuzzi           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="wificolumn" Binding="{Binding wifi}" Header="Wifi           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="tvcolumn" Binding="{Binding tv}" Header="TV           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="gardencolumn" Binding="{Binding garden}" Header="Garden          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="areacolumn" Binding="{Binding area}" Header="Area          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="childrensAttractionscolumn" Binding="{Binding childrensAttractions}" Header="Childrens Attractions          " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="publicTransportationcolumn" Binding="{Binding publicTransportation}" Header="Public Transportation           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="viewcolumn" Binding="{Binding view }" Header="View           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="smokingcolumn" Binding="{Binding smoking}" Header="Smoking           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="roomServicecolumn" Binding="{Binding roomService}" Header="Room Service           " Width="SizeToHeader"  />
+                <DataGridTextColumn x:Name="snackBarcolumn" Binding="{Binding snackBar}" Header="Snack Bar          " Width="SizeToHeader"  />
+                
+            </DataGrid.Columns>
+           
+        </DataGrid>
+    </Grid>
+</Window>

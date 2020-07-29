@@ -1,0 +1,42 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.OrderListQueries"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Order List Queries" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+
+    <Grid >
+
+        <Grid.Background>
+            <ImageBrush ImageSource="https://lh3.googleusercontent.com/xaIbTQiIT1WAPD4xRMY_BXsXDh2foPCJgnGAjAcl1WOg_lKTY9F8nZpXTB8rLZpnLHIOeuDmxe0=w640-h400-e365"/>
+        </Grid.Background>
+        <Label Content="Group Orders" Foreground="LightCoral" FontWeight="ExtraBold" FontSize="16" HorizontalAlignment="Left" Margin="159,28,0,0" VerticalAlignment="Top" Height="37" Width="118"/>
+        <DataGrid Name="groupedordersGrid" IsReadOnly="True" Opacity="0.5" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="256" Margin="39,93,0,0" VerticalAlignment="Top" Width="690" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.306"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="1.661"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="requestkeycolumn" Binding="{Binding GuestRequestKey}" Header="Request Key           " Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="hostingunitkeycolumn" Binding="{Binding HostingUnitKey}" Header="Hosting Unit Key         " Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="orderkeycolumn" Binding="{Binding OrderKey}" Header="Order Key         " Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="statuscolumn" Binding="{Binding Status}" Header="Status             " Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="createdatecolumn" Binding="{Binding CreateDate}" Header="Create Date           " Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="orderdatecolumn" Binding="{Binding OrderDate}" Header="Order Date            " Width="SizeToHeader"/>
+            </DataGrid.Columns>
+           
+
+        </DataGrid>
+        <ComboBox Name="groupbyComboBox" HorizontalAlignment="Left" Opacity="0.5" Margin="517,28,0,0" VerticalAlignment="Top" Width="120" Height="37" SelectionChanged="groupbyComboBox_SelectionChanged">
+            <ComboBoxItem>Group by Popularity</ComboBoxItem>
+            <ComboBoxItem>All</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Exit" Name="exitButton" Foreground="LightCoral" Opacity="0.5" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,376,0,0" VerticalAlignment="Top" Width="75" Click="exitButton_Click"/>
+    </Grid>
+</Window>

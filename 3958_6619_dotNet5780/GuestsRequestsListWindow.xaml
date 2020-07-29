@@ -1,0 +1,26 @@
+﻿<Window x:Class="_3958_6619_dotNet5780.GuestsRequestsListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3958_6619_dotNet5780"
+        mc:Ignorable="d"
+        Title="Guests Requests List Window" Icon="https://previews.123rf.com/images/bydronephotos/bydronephotos1902/bydronephotos190200134/117104788-palm-tree-beach-landscape-travel-vacation-tropical-destination-palm-tree-beach-landscape-palm-trees-.jpg" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="guestrequestListBox" Opacity="0.5" Background="PowderBlue"  HorizontalAlignment="Left" Height="174" Margin="91,104,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="526" SelectionChanged="guestrequestListBox_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Exit" Name="exitButton" Opacity="0.5" Foreground="LightCoral" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="48,357,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="75" Click="exitButton_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="http://worldlandforms.com/landforms/wp-content/uploads/2015/03/Beach.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>
